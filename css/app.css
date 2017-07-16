@@ -58,9 +58,8 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background-size: auto 80%;
+  background-size: auto 50%;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .half {
@@ -90,6 +89,7 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
+  font-size: 6.25rem;
 }
 
 .agenda {
