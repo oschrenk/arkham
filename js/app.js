@@ -26,16 +26,19 @@ Vue.component('token-picker', {
   template: `
     <div class="clicker" v-on:click="randomize">{{ token }}</div>
   `,
+  props: ['tokenChoice'],
   data: function () {
     return {
       visible: false,
-      token: ""
+      token: "",
+      choice: this.tokenChoice
     }
   },
   methods: {
     randomize: function () {
       this.visible = true;
-      this.token = "foo";
+      var index = Math.floor(Math.random() * this.choice.length);
+      this.token = this.choice[index];
       this.$emit('randomize');
     }
   }

@@ -4,15 +4,47 @@ html, body, section {
 
 body {
   font-family: sans-serif;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   line-height: 150%;
   text-align: center;
   text-shadow: 0 4px 4px #b6701e;
+  background-image: url("../img/background.png");
+}
+
+#advance  {
+  display: flex;
+}
+
+#advance div {
+  flex: 1;
+}
+
+#chaos {
+  height: 400px;
+}
+
+#counters  {
+  display: flex;
+}
+
+#counters div {
+  flex: 1;
+}
+
+
+.clicker {
+  width: 220px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #ddd;
 }
 
 .counter {
-  width: 100px;
-  height: 80px;
+  width: 220px;
+  height: 140px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -49,6 +81,14 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
+}
+
+.agenda {
+  background-image: url("../img/doom.png");
+}
+
+.act {
+  background-image: url("../img/clue.png");
 }
 
 .damage {
