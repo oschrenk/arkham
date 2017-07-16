@@ -16,25 +16,40 @@ body {
   height: 80px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   position: relative;
 }
 
-.left-half {
-  background-color: #ff9e2c;
+.half {
+  display: flex;
   flex: 1;
+}
+
+.half span {
+  align-self: flex-end;
+}
+
+.left {
+  background-color: #ff9e2c;
   text-align: left;
 }
 
-.right-half {
+.right {
   background-color: #b6701e;
-  flex: 1;
-  text-align: right;
 }
+
+.right span {
+  margin-left: auto;
+}
+
 
 .overlay {
   position: absolute;
   left: 0; top: 0; right: 0; bottom: 0;
   pointer-events: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .damage {

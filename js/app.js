@@ -1,8 +1,8 @@
 Vue.component('number-picker', {
   template: `
     <div class="container">
-       <div class="left-half" v-on:click="decrement">-</div>
-       <div class="right-half" v-on:click="increment">+</div>
+       <div class="left half" v-on:click="decrement"><span>-</span></div>
+       <div class="right half" v-on:click="increment"><span>+</span></div>
        <div class="overlay">{{ counter }}</div>
     </div>
   `,
