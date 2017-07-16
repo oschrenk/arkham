@@ -22,6 +22,24 @@ Vue.component('number-picker', {
     }
   }
 })
+Vue.component('token-picker', {
+  template: `
+    <div class="clicker" v-on:click="randomize">{{ token }}</div>
+  `,
+  data: function () {
+    return {
+      visible: false,
+      token: ""
+    }
+  },
+  methods: {
+    randomize: function () {
+      this.visible = true;
+      this.token = "foo";
+      this.$emit('randomize');
+    }
+  }
+})
 var app = new Vue({
   el: '#app',
 })
