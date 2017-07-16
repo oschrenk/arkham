@@ -1,10 +1,11 @@
-html, body, section {
-  height: 100%;
-}
-
 @font-face {
   font-family: "arkham";
   src: url("../font/arkham.woff") format('woff');
+}
+
+html, body  {
+  height: 1334px
+  width: 750px;
 }
 
 body {
@@ -12,8 +13,11 @@ body {
   font-size: 3.25rem;
   line-height: 150%;
   text-align: center;
-  text-shadow: 0 0px 0px #b6701e;
   background-image: url("../img/background.png");
+}
+
+#header  {
+  height: 200px;
 }
 
 #advance  {
@@ -25,8 +29,8 @@ body {
 }
 
 #chaos {
-  font-size: 6.25rem;
-  height: 400px;
+  font-size: 9.25rem;
+  height: 600px;
 }
 
 #counters  {
@@ -38,12 +42,13 @@ body {
 }
 
 .clicker {
-  width: 400px;
-  height: 140px;
-  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  margin: auto auto;
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  text-align: center;
 }
 
 .counter {
