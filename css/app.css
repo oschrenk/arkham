@@ -1,0 +1,47 @@
+html, body, section {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0 2px 2px #b6701e;
+}
+
+.container {
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.left-half {
+  background-color: #ff9e2c;
+  flex: 1;
+  text-align: left;
+}
+
+.right-half {
+  background-color: #b6701e;
+  flex: 1;
+  text-align: right;
+}
+
+.overlay {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  pointer-events: none;
+}
+
+.damage {
+  background-image: url("../img/damage-vertical.png");
+}
+
+.horror {
+  background-image: url("../img/horror.png");
+}
+
