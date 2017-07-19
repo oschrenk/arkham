@@ -4,20 +4,15 @@
 }
 
 html, body  {
-  height: 1334px
-  width: 750px;
+  height: 100%
+  width: 100%;
 }
 
 body {
   font-family: arkham;
-  font-size: 3.25rem;
-  line-height: 150%;
-  text-align: center;
   background-image: url("../img/background.png");
-}
-
-#header  {
-  height: 200px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
 }
 
 #advance  {
@@ -29,8 +24,9 @@ body {
 }
 
 #chaos {
-  font-size: 9.25rem;
-  height: 600px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 #counters  {
@@ -42,18 +38,17 @@ body {
 }
 
 .clicker {
-  width: 600px;
-  height: 600px;
+  font-size: 5.25rem;
+  height: 130px;
   margin: auto auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  flex: 1;
 }
 
 .counter {
-  width: 220px;
-  height: 140px;
+  font-size: 3.25rem;
+  width: 140px;
+  height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -89,7 +84,6 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
-  font-size: 6.25rem;
 }
 
 .agenda {
