@@ -1,0 +1,13 @@
+{
+  "name": "Arkham Solo",
+  "short_name": "Arkham",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Arkham Horror Card Game Solo Helper",
+  "icons": [{
+    "src": "img/icon.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }]
+}
