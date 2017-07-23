@@ -26,6 +26,14 @@ body {
   display: flex;
 }
 
+#phases {
+  flex: 1 0 0;
+}
+
+#control {
+  flex: 2 0 0;
+}
+
 #advance  {
   display: flex;
 }
