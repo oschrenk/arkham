@@ -127,6 +127,10 @@ body {
 
 @media screen and (orientation: portrait) {
 
+  #app {
+    flex-direction: column;
+  }
+
   .picker {
     height: 130px;
   }
@@ -145,6 +149,10 @@ body {
 }
 
 @media screen and (orientation: landscape) {
+  #app {
+    flex-direction: row;
+  }
+
   .picker {
     height: 130px;
   }
