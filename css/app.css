@@ -41,15 +41,10 @@ body {
 }
 
 .picker {
-  height: 130px;
   text-align: center;
   flex: 1;
 }
 
-.picker .main {
-  height: 80px;
-  font-size: 4.5rem;
-}
 .picker .main.hidden {
   background-size: auto auto;
   background-position: center;
@@ -76,16 +71,11 @@ body {
   flex: 1;
 }
 
-
 .counter {
-  font-size: 3.25rem;
-  width: 140px;
-  height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   position: relative;
-  background-size: auto 50%;
   background-repeat: no-repeat;
 }
 
@@ -100,9 +90,6 @@ body {
 
 .left {
   text-align: left;
-}
-
-.right {
 }
 
 .right span {
@@ -138,3 +125,40 @@ body {
   background-image: url("../img/horror.png");
 }
 
+@media screen and (orientation: portrait) {
+
+  .picker .main {
+    height: 80px;
+    font-size: 4.5rem;
+  }
+
+  .picker {
+    height: 130px;
+  }
+
+  .counter {
+    font-size: 3.25rem;
+    width: 140px;
+    height: 100px;
+    background-size: auto 50%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .picker .main {
+    height: 80px;
+    font-size: 4.5rem;
+  }
+
+  .picker {
+    height: 130px;
+  }
+
+  .counter {
+    font-size: 3.25rem;
+    width: 140px;
+    height: 100px;
+    background-size: auto 50%;
+  }
+
+}
