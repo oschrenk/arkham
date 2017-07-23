@@ -156,6 +156,10 @@ body {
     flex-direction: column;
   }
 
+  #phases {
+    column-count: 2;
+  }
+
   .picker {
     height: 130px;
   }
