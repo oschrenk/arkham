@@ -24,8 +24,8 @@ Vue.component('number-picker', {
 })
 Vue.component('token-picker', {
   template: `
-    <div v-bind:class="{ picker: true, hidden: hidden() }" v-on:click="randomize">
-      <div class="main">{{ token }}</div>
+    <div class="picker" v-on:click="randomize">
+      <div v-bind:class="{ main: true, hidden: hidden() }">{{ token }}</div>
       <ul class="last">
         <li v-for="result in lastResults">
           {{ result }}
