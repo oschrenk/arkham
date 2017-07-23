@@ -3,6 +3,11 @@
   src: url("../font/arkham.woff") format('woff');
 }
 
+html, body  {
+  height: 100%
+  width: 100%;
+}
+
 div {
     -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
@@ -10,16 +15,15 @@ div {
     -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 
-html, body  {
-  height: 100%
-  width: 100%;
-}
-
 body {
   font-family: arkham;
   background-image: url("../img/background.png");
   background-size: auto auto;
   background-repeat: no-repeat;
+}
+
+#app {
+  display: flex;
 }
 
 #advance  {
