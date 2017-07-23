@@ -62,11 +62,9 @@ body {
   background-image: url("../img/random.svg");
 }
 
+
 .picker ul {
-  display: inline;
-  list-style-type: none;
-  font-size: 1.25rem;
-  text-align: center;
+  padding-left: 0px;
 }
 .picker ul li {
   display:inline-block;

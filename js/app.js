@@ -27,9 +27,7 @@ Vue.component('token-picker', {
     <div class="picker" v-on:click="randomize">
       <div v-bind:class="{ main: true, hidden: hidden() }">{{ token }}</div>
       <ul class="last">
-        <li v-for="result in lastResults">
-          {{ result }}
-        </li>
+        <li v-for="result in lastResults">{{ result }}</li>
       </ul>
     </div>
   `,
