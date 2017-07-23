@@ -29,14 +29,12 @@ Vue.component('token-picker', {
   props: ['tokenBag'],
   data: function () {
     return {
-      visible: false,
       token: "",
       bag: this.tokenBag
     }
   },
   methods: {
     randomize: function () {
-      this.visible = true;
       var index = Math.floor(Math.random() * this.bag.length);
       this.token = this.bag[index];
       this.$emit('randomize');
