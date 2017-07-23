@@ -10,28 +10,30 @@
   </head>
   <body>
     <div id="app">
-      <div id="header">
+      <div id="phases">
       </div>
-      <div id="advance">
-        <div>
-          <number-picker class="agenda"/>
+      <div id="control">
+        <div id="advance">
+          <div>
+            <number-picker class="agenda"/>
+          </div>
+          <div>
+            <number-picker class="act" />
+          </div>
         </div>
-        <div>
-          <number-picker class="act" />
+        <div id="chaos">
+          <token-picker v-bind:token-bag='["+1", "+1", "0", "0", "0", "-1", "-1", "-1", "-2", "-2", "s", "s", "c" , "t" , "f", "e" ]'/>
         </div>
-      </div>
-      <div id="chaos">
-        <token-picker v-bind:token-bag='["+1", "+1", "0", "0", "0", "-1", "-1", "-1", "-2", "-2", "s", "s", "c" , "t" , "f", "e" ]'/>
-      </div>
-      <div id="counters">
-        <div>
-          <number-picker class="damage"/>
-        </div>
-        <div>
-          <number-picker class="resource"/>
-        </div>
-        <div>
-          <number-picker class="horror"/>
+        <div id="counters">
+          <div>
+            <number-picker class="damage"/>
+          </div>
+          <div>
+            <number-picker class="resource"/>
+          </div>
+          <div>
+            <number-picker class="horror"/>
+          </div>
         </div>
       </div>
     </div>
