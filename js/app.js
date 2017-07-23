@@ -8,6 +8,16 @@ document.addEventListener('touchend', function (event) {
   lastTouchEnd = now;
 }, false);
 
+// prevent iOS from sleeping
+var noSleep = new NoSleep();
+
+function enableNoSleep() {
+  noSleep.enable();
+  document.removeEventListener('touchstart', enableNoSleep, false);
+}
+document.addEventListener('touchstart', enableNoSleep, false);
+
+// vue components
 Vue.component('number-picker', {
   template: `
     <div class="counter">
