@@ -45,6 +45,14 @@ body {
   display: flex;
 }
 
+#chaos .hidden {
+  background-size: auto auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/random.svg");
+}
+
+
 #counters  {
   display: flex;
 }

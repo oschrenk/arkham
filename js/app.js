@@ -24,20 +24,27 @@ Vue.component('number-picker', {
 })
 Vue.component('token-picker', {
   template: `
-    <div class="clicker" v-on:click="randomize">{{ token }}</div>
+    <div v-bind:class="{ clicker: true, hidden: hidden() }" v-on:click="randomize">{{ token }}</div>
   `,
   props: ['tokenBag'],
   data: function () {
     return {
-      token: "",
+      token: undefined,
       bag: this.tokenBag
     }
   },
   methods: {
     randomize: function () {
-      var index = Math.floor(Math.random() * this.bag.length);
-      this.token = this.bag[index];
+      if (this.hidden()) {
+        var index = Math.floor(Math.random() * this.bag.length);
+        this.token = this.bag[index];
+      } else {
+        this.token = undefined;
+      }
       this.$emit('randomize');
+    },
+    hidden: function () {
+      return this.token == undefined;
     }
   }
 })
