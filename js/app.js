@@ -24,12 +24,20 @@ Vue.component('number-picker', {
 })
 Vue.component('token-picker', {
   template: `
-    <div v-bind:class="{ clicker: true, hidden: hidden() }" v-on:click="randomize">{{ token }}</div>
+    <div v-bind:class="{ picker: true, hidden: hidden() }" v-on:click="randomize">
+      <div class="main">{{ token }}</div>
+      <ul class="last">
+        <li v-for="result in lastResults">
+          {{ result }}
+        </li>
+      </ul>
+    </div>
   `,
   props: ['tokenBag'],
   data: function () {
     return {
-      token: undefined,
+      token: " ",
+      lastResults: [],
       bag: this.tokenBag
     }
   },
@@ -39,12 +47,16 @@ Vue.component('token-picker', {
         var index = Math.floor(Math.random() * this.bag.length);
         this.token = this.bag[index];
       } else {
-        this.token = undefined;
+        if (this.lastResults.length >= 3) {
+          this.lastResults.shift();
+        }
+        this.lastResults.push(this.token);
+        this.token = " ";
       }
       this.$emit('randomize');
     },
     hidden: function () {
-      return this.token == undefined;
+      return this.token == " ";
     }
   }
 })

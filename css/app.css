@@ -45,13 +45,35 @@ body {
   display: flex;
 }
 
-#chaos .hidden {
+.picker {
+  height: 130px;
+  text-align: center;
+  flex: 1;
+}
+
+.picker .main {
+  height: 80px;
+  font-size: 4.5rem;
+}
+.picker .main.hidden {
   background-size: auto auto;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/random.svg");
 }
 
+.picker ul {
+  display: inline;
+  list-style-type: none;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.picker ul li {
+  display:inline-block;
+}
+.picker ul li+li:before {
+  content: ' , ';
+}
 
 #counters  {
   display: flex;
@@ -61,13 +83,6 @@ body {
   flex: 1;
 }
 
-.clicker {
-  font-size: 5.25rem;
-  height: 130px;
-  margin: auto auto;
-  text-align: center;
-  flex: 1;
-}
 
 .counter {
   font-size: 3.25rem;
